@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wombat DM Clicker</title>
+    <style>
+		body {
+			width: 300px;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			font-size: 24px;
+		}
+		input {
+			margin-bottom: 8px;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+			margin: 2px auto;
+			padding: 8px;
+			background-color: #1e90ff;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+    </style>
+  </head>
+  <body>
+    <h1>Wombat DM Clicker Tools</h1>
+	<h2>Running mod</h2>
+    <label for="delay">Intervalle de temps :</label>
+    <br>
+    <select id="delay">
+      <option value="null">Non défini</option>
+      <option value="301000">5 minutes</option>
+      <option value="901000">15 minutes</option>
+      <option value="3601000">1 heure</option>
+      <option value="21601000">6 heures</option>
+      <option value="28801000">8 heures</option>
+      <option value="86401000">24 heures</option>
+    </select>
+    <br>
+    <label for="iterations">Nombre d'itérations :</label>
+    <br>
+    <input type="number" id="iterations" value="3">
+    <br>
+    <button id="start">Commencer</button>
+    <button id="stop">Arrêter</button>
+	<h2>Click All Tools</h2>
+    <button id="ask-help-all">Ask Help All</button>
+    <button id="help-all">Help All</button>
+	<script src="clicker.js"></script>
+  </body>
+</html>

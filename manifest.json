@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "WombatClicker",
+  "version": "1.0",
+  "description": "Extension to simulate clicks on WDM",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "clicker.html"
+  },
+  "permissions": [
+	"tabs",
+	"activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
